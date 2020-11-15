@@ -1,10 +1,16 @@
-.App {
-  text-align: center;
-}
+
 
 .App-logo {
   height: 40vmin;
   pointer-events: none;
+}
+a {
+  color: inherit !important;
+  padding: 0%;
+}
+.nav-link {
+  display: block;
+  padding: 0px !important;
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -35,4 +41,406 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+
+.bg-light{
+  background-color: white !important;
+  padding: .45rem 1.8rem !important;
+}
+#main-brand{
+  position: relative;
+    top: 3px;
+    font-size: 1.38rem;
+    color: #5f6368;
+    font-weight: 700;
+    padding-left: 1px;
+}
+#main-brand-room{
+  color: #5f6368;
+  position: relative;
+  top: 3px;
+  font-size: 1.25rem;
+  padding: 4px;
+}
+.signup-btn{
+  margin-left: 10px !important;
+}
+.overview-anchor{
+  position: relative;
+  top: 2px;
+}
+.ContentPart1-div{
+  padding: 1em 3em;
+}
+.ContentPart1-div-left{
+  padding: 1em 3em;
+}
+.ContentPart1-div .h1-headline{
+  font-family: 'Google Sans Display',Roboto,Arial,sans-serif;
+    font-size: 2.75rem;
+    font-weight: 400;
+    letter-spacing: 0;
+    line-height: 3.25rem;
+    padding-bottom: .5em;
+}
+.ContentPart1-div .h2-headline{
+  font-family: 'Google Sans',Roboto,Arial,sans-serif;
+    font-size: 1.125rem;
+    font-weight: 400;
+    letter-spacing: 0;
+    line-height: 1.5rem;
+    color: #5f6368;
+    color: var(--gm-color-caption,#5f6368);
+    max-width: 30rem;
+    padding-bottom: 3em;
+}
+.img-thumbnail {
+  padding: 2rem;
+  background-color: #fff;
+  border: 1px solid #dee2e6;
+  border-radius: .6rem;
+  max-width: 100%;
+  height: auto;
+  box-shadow: 0 1px 2px 0 rgba(60,64,67,0.302), 0 2px 6px 2px rgba(60,64,67,0.149);
+}
+.ContentPart1-div-right{
+  padding: 1em 3em;
+}
+.ContentPart1-div{
+  display: flex;
+  padding: 2em 2em;
+}
+.mainBodyContent{
+  padding: 5em 0em 0 0;
+}
+.room-name-span{
+  position: relative;
+  left: 10px;
+  top: 2px;
+}
+.btn-room{
+  padding: .375rem .75rem .375rem .15rem !important;
+}
+.btn-room,.signup-btn{
+  background-color: #0E6F38 !important;
+}
+.btn-outline-success:hover{
+  background-color: #0E6F38 !important;
+}
+.input-group-text{
+  background-color: white !important;
+  border-right: none;
+}
+.btn-room-join{
+  background-color: #0E6F38 ;
+  background: none !important;
+  color: #dadada;
+  border: none
+}
+.btn-room-join:hover{
+  color: #dadada;
+}
+.btn-room-join:active{
+  background-color: #0E6F38 !important;
+  color: white;
+  box-shadow: none;
+}
+.input-group>.custom-file, .input-group>.custom-select, .input-group>.form-control, .input-group>.form-control-plaintext {
+  border-left: none;
+  min-height: 41px;
+}
+.arrange-meet-div{
+  display: inline-flex;
+}
+.bg-image{
+  position: fixed;
+  left: 500px;
+  top: 450px;
+  opacity: 0.7;
+  z-index: -1;
+}
+.bg-image1{
+  position: fixed;
+  left: 1320px;
+  top: 100px;
+  opacity: 0.5;
+  z-index: -2;z-index: -2;
+}
+.bg-image1{
+  position: fixed;
+  top: 200px;
+  left: -1px;
+  border-radius: 50%;
+  min-width: 20px;
+  min-height: 20px;
+  z-index: -2;
+  border: 3px solid rgba(0, 128, 90, 0.678);
+}
+.bg-image2{
+  position: fixed;
+  top: 130px;
+  right: 40px;
+  border-radius: 10px;
+  min-width: 20px;
+  min-height: 20px;
+  z-index: -2;
+  border: 3px solid rgba(0, 128, 90, 0.550);
+}
+.bg-image3{
+  position: fixed;
+  top: 150px;
+  right: -4px;
+  border-radius: 10px;
+  min-width: 20px;
+  min-height: 20px;
+  z-index: -2;
+  border: 3px solid rgba(169, 218, 34, 0.664);
+}
+.bg-image4{
+  position: fixed;
+  top: 150px;
+  right: 90px;
+  border-radius: 10px;
+  min-width: 20px;
+  min-height: 20px;
+  z-index: -2;
+  border: 3px solid rgba(90, 37, 236, 0.550);
+}
+.bg-image5{
+  position: fixed;
+  top: 180px;
+  right: 120px;
+  border-radius: 10px;
+  min-width: 20px;
+  min-height: 20px;
+  border: 3px solid rgba(236, 93, 37, 0.550);
+  z-index: -2;
+}
+
+.modal-content h2{
+  font-family: 'Google Sans',Roboto,Arial,sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: .1px;
+    line-height: 24px;
+}
+.copy-icon{
+  color: #f1f3f4;
+  
+  padding: 7px !important;
+}
+.copy-icon:active{
+  background: #d6d7d8;
+  padding: 7px !important;
+    border-radius: 50px;
+}
+.copy-div{
+  padding: 0px !important;
+}
+#myInput{
+  width: 100%;
+  background: transparent;
+  border: none;
+  cursor: default;
+}
+.btn{
+  border-radius: 30px;
+  padding: .8vh  2vh;
+}
+
+.login{
+  background-color: rgba(255, 245, 253, 0.548) !important;
+}
+.login .bg-light{
+  background-color: rgba(255, 245, 253, 0.548) !important;
+}
+.login_form{
+  padding: 2% 3% ;
+  box-shadow: 0 3px 8px 0 rgba(60,64,67,0.302), 0 6px 18px 6px rgba(60,64,67,0.149);
+  border-radius: 10px;
+  margin: 1% 5%;
+  z-index: 5;
+}
+.login_form p{
+  font-size: .95em;
+    color: rgba(73, 71, 71, 0.863);
+}
+.login_form .flex-nowrap{
+  margin-top: 1vh;
+  margin-bottom: 1vh;
+}
+.login_form #extra{
+  font-size: .75em;
+    color: rgb(112, 112, 112);
+}
+.login_form .form-inline{
+  margin-top: 1.5vh;
+}
+.login_form  .btn-success{
+  border-radius: 30px;
+    padding: 1vh 2.5vh;
+    margin: 0px !important;
+}
+.login_form  .btn-light{
+  border-radius: 30px !important;
+    padding: 1vh 3vh;
+    margin: 0 1vh !important;
+}
+@media only screen and (max-width: 900px) {
+  .login_content .left{
+    max-width: 45% !important;
+  }
+  .login_content  .right{
+    max-width: 55% !important;
+  }
+  .login_form{
+    padding: 2% 5% ;
+    margin: 1% 0% ;
+  }
+}
+@media only screen and (max-width: 800px) {
+  .login_content .left{
+    max-width: 45% !important;
+    display: none !important;
+
+  }
+  .login_content  .right{
+    min-width: 100% !important;
+    padding : 0px !important;
+  }
+  .login_form{
+    padding: 2% 5% ;
+    margin: 1% 0% ;
+    box-shadow: none;
+  }
+  #login_img{
+    width: 45% !important;
+    margin: 0px 27% !important;
+  }
+}
+@media only screen and (max-width: 600px) {
+  #login_img{
+    width: 60% !important;
+    margin: 0px 18% !important;
+  }
+}
+@media only screen and (max-width: 500px) {
+  #login_img{
+    width: 75% !important;
+    margin: 0px 12% !important;
+  }
+}
+
+
+@media only screen and (max-width: 440px) {
+  .ContentPart1-div {
+    display: block;
+    padding: 0em 0em;
+  }
+  .bg-light{
+    padding: .45rem .8rem !important;
+  }
+  .ContentPart1-div .h1-headline {
+    font-size: 2.2rem !important;
+  }
+  .ContentPart1-div-left,.ContentPart1-div-right {
+    padding: 1em 1em;
+}
+  .mainBodyContent {
+    padding: 2em 0em;
+  }
+  .arrange-meet-div{
+    display: block;
+  }
+  .arrange-meet-div .col-sm-12{
+    padding: 0%;
+  }
+  .btn-room{
+    position: relative;
+    top: -10px;
+  }
+  .bg-image1,.bg-image2,.bg-image3,.bg-image4,.bg-image5,.bg-image{
+    display: none !important;
+  }
+}
+
+
+@media only screen and (max-width: 760px) {
+  .ContentPart1-div {
+    display: block;
+    padding: 0em 0em;
+  }
+  
+  .mainBodyContent {
+    padding: 2em 0em;
+  }
+  .arrange-meet-div{
+    display: block;
+  }
+  .arrange-meet-div .col-sm-12{
+    padding: 0%;
+  }
+  .btn-room{
+    position: relative;
+    top: -10px;
+  }
+  .bg-image1,.bg-image2,.bg-image3,.bg-image4,.bg-image5,.bg-image{
+    display: none !important;
+  }
+}
+@media only screen and (max-width: 780px) {
+  .ContentPart1-div {
+    padding: 0em 0em;
+  }
+  
+  .mainBodyContent {
+    padding: 2em 0em;
+  }
+  .ContentPart1-div-left {
+    padding: 1em 1em;
+}
+.ContentPart1-div-right {
+  padding: 1em 1em;
+}
+  .arrange-meet-div .col-sm-12{
+    padding: 0%;
+  }
+  .btn-room{
+    position: relative;
+    left: -4px;
+  } 
+  .bg-image1,.bg-image2,.bg-image3,.bg-image4,.bg-image5{
+    display: none !important;
+  }
+}
+@media only screen and (max-width: 960px) {
+  .ContentPart1-div {
+    padding: 0em 0em;
+  }
+  
+  .mainBodyContent {
+    padding: 4em 0em;
+  }
+  .ContentPart1-div-left {
+    padding: 1em 1em;
+}
+.ContentPart1-div-right {
+  padding: 1em 1em;
+}
+}
+@media only screen and (max-width: 860px) {
+  .ContentPart1-div {
+    padding: 0em 0em;
+  }
+  
+  .mainBodyContent {
+    padding: 2em 0em;
+  }
+  .ContentPart1-div-left {
+    padding: 1em 1em;
+}
+.ContentPart1-div-right {
+  padding: 1em 1em;
+}
 }
