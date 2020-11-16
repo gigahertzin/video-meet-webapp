@@ -20,7 +20,7 @@ export default function Login(props) {
         <div className="login" >
             {props.islogin? <Redirect to="/" />:null}
             <nav className="navbar navbar-expand-lg navbar-light bg-light">
-                <a className="navbar-brand" href="index.html"><img src="https://img.icons8.com/fluent/38/000000/video-call.png" /> <span id="main-brand">Vcon</span><span id="main-brand-room">Room</span></a>
+                <a className="navbar-brand" href="/"><img src="https://img.icons8.com/fluent/38/000000/video-call.png" /> <span id="main-brand">Vcon</span><span id="main-brand-room">Room</span></a>
             </nav>
             <div style={{ display: "flex" }} className="login_content">
                 <div className="col-md-6 left">
@@ -55,7 +55,7 @@ export default function Login(props) {
                         <span id="extra">Forgot your login details ? Get help Signup</span>
                         <div className="form-inline">
                             <button className="btn btn-success signup-btn  my-2 my-sm-0" type="submit" onClick={()=>{validation()}}>Login</button>
-                            <Link to={`/sigup`} className="nav-link"><button type="button" class="btn btn-light">Sign up</button></Link>
+                            <Link to={`/signup`} className="nav-link"><button type="button" class="btn btn-light">Sign up</button></Link>
                         </div>
                     </div>
                 </div>

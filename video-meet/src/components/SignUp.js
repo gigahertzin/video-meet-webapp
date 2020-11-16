@@ -20,7 +20,7 @@ export default function SignUp(props) {
         <div className="login" >
             {props.islogin? <Redirect to="/" />:null}
             <nav className="navbar navbar-expand-lg navbar-light bg-light">
-                <a className="navbar-brand" href="index.html"><img src="https://img.icons8.com/fluent/38/000000/video-call.png" /> <span id="main-brand">Vcon</span><span id="main-brand-room">Room</span></a>
+                <a className="navbar-brand" href="/"><img src="https://img.icons8.com/fluent/38/000000/video-call.png" /> <span id="main-brand">Vcon</span><span id="main-brand-room">Room</span></a>
             </nav>
             <div style={{ display: "flex" }} className="login_content">
                 <div className="col-md-6 left">
