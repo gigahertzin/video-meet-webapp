@@ -1,7 +1,13 @@
-import React from "react";
+import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import LinkGenerate from "../LinkGenerate";
 
 export default function ContentPart1() {
+  const [roomId, setRoomId] = useState("");
+  const onclickHandler = () => {
+    const roomNumber = roomId;
+    console.log(roomNumber);
+  };
   return (
     <div className="ContentPart1-div  ">
       <div class="ContentPart1-div-left  col-md-6 col-sm-12">
@@ -15,9 +21,9 @@ export default function ContentPart1() {
         </h2>
         <div className="arrange-meet-div">
           <LinkGenerate />
-          <div class="input-group flex-nowrap col-md-7 col-sm-12">
-            <div class="input-group-prepend">
-              <span class="input-group-text" id="addon-wrapping">
+          <div className="input-group flex-nowrap col-md-7 col-sm-12">
+            <div className="input-group-prepend">
+              <span className="input-group-text" id="addon-wrapping">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   x="0px"
@@ -211,18 +217,22 @@ export default function ContentPart1() {
             </div>
             <input
               type="text"
-              class="form-control"
+              className="form-control"
               placeholder="Enter a code or link"
               aria-label="Username"
               aria-describedby="addon-wrapping"
+              onChange={(e) => setRoomId(e.target.value)}
             />
           </div>
-          <button
-            type="button"
-            class="btn btn-room-join btn-success col-md-2 col-sm-12"
-          >
-            Join
-          </button>
+          <Link to={`/${roomId}`}>
+            <button
+              type="button"
+              className="btn btn-room-join btn-success col-md-2 col-sm-12"
+              onClick={onclickHandler}
+            >
+              Join
+            </button>
+          </Link>
         </div>
         <br />
         <br />
@@ -231,10 +241,10 @@ export default function ContentPart1() {
           Learn more about Vcon Room
         </span>
       </div>
-      <div class="col-md-6 col-sm-12 ContentPart1-div-right">
+      <div className="col-md-6 col-sm-12 ContentPart1-div-right">
         <img
           src="https://graphicriver.img.customer.envatousercontent.com/files/286736091/preview.jpg?auto=compress%2Cformat&q=80&fit=crop&crop=top&max-h=8000&max-w=590&s=f30833177ec3299c9995b706bd8d990c"
-          class="img-fluid img-thumbnail"
+          className="img-fluid img-thumbnail"
           alt="Responsive image"
           width="100%"
         ></img>
